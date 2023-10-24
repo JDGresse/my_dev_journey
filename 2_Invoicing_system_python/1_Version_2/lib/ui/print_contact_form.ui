@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>1100</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>770</width>
+    <height>1100</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>770</width>
+    <height>1100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>731</width>
+     <height>119</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="r1_top_row" stretch="20,40,35">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetFixedSize</enum>
+    </property>
+    <item>
+     <widget class="QFrame" name="f1_prac_name">
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="practice_name">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>22</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Private Practice</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="f2_prac_address">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>14</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="address">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Address:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="l1">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="suburb">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="l2">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="suburb_2">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Suburb</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="l3">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="city">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>City:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="l4">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="postal">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Postal Code:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="l5">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="f3_prac_contact">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="horizontalSpacing">
+        <number>12</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item row="1" column="0">
+        <widget class="QLabel" name="phone">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Phone:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="l6">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="email">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="l7">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="website">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Website:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="l8">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="spacer_5">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="spacer_6">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="spacer_7">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="spacer_8">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>731</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="r2_reg_deets">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="f4_psy_quali">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_14">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="psyc">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Psychologist </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="quali">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Highest Qualification and Institution</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="f5_bhf_hpcsa">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout_8">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="bhf">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>BHF Practice Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="bhf_num">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>1234567890</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="hpcsa">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>HPCSA registration Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="hpcsa_num">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>12</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>1234567890</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>281</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Client</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>220</y>
+     <width>171</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Contact Number</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>489</x>
+     <y>220</y>
+     <width>261</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Email</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
