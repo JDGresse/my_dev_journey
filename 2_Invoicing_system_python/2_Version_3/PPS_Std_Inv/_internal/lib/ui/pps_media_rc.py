@@ -3,7 +3,7 @@
 # Created by: The Resource Compiler for Qt version 6.5.0
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore
+from PySide6 import QtCore
 
 qt_resource_data = b"\
 \x00\x00\x15\xe2\
@@ -1752,24 +1752,17 @@ qt_resource_struct = b"\
 \x00\x00\x00\x1c\x00\x02\x00\x00\x00\x01\x00\x00\x00\x04\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00,\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
-\x00\x00\x01\x8bb\x0e)G\
+\x00\x00\x01\x8b\xc7\xd6\xca\xdf\
 \x00\x00\x00\x1c\x00\x02\x00\x00\x00\x01\x00\x00\x00\x06\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00B\x00\x01\x00\x00\x00\x01\x00\x00\x15\xe6\
-\x00\x00\x01\x8bb\x0e)G\
+\x00\x00\x01\x8b\xc7\xd6\xca\xdf\
 "
 
-
 def qInitResources():
-    QtCore.qRegisterResourceData(
-        0x03, qt_resource_struct, qt_resource_name, qt_resource_data
-    )
-
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 def qCleanupResources():
-    QtCore.qUnregisterResourceData(
-        0x03, qt_resource_struct, qt_resource_name, qt_resource_data
-    )
-
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 qInitResources()
