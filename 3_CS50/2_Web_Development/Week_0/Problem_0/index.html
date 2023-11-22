@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="dark" name="color-scheme">
+
+        <title>Search</title>
+
+        <style>
+            .outer_container {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            
+            .outer_container > div {
+                color-scheme: dark;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: inline-flex;
+            }
+
+            .inner_container {
+                display: inline-flex;
+                justify-content: space-between;
+                padding-right: 20px;
+                width: 10%;
+            }
+            
+            .searchbar {
+                width: 585px;
+                height: 50px;
+                border-radius: 25px;
+                border-color: rgb(255, 255, 255);
+                border-style: solid;
+            }
+            
+            .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 20px;
+                justify-content: center;
+                align-content: center;
+            }
+            
+            #search_area {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+
+            }
+
+            #sb {
+                width: 580px;
+                height: 45px;
+                border-radius: 25px;
+            }
+
+            .in_but {
+                width: 140px;
+                height: 40px;
+            }
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="outer_container">
+            
+            <div class="inner_container" role="navigation">
+
+                <div class="container">
+
+                    <div class="link_image">
+                        
+                        <a class="image" aria-label="Image Search (opens a new tab)" data-pid="23" href="file:///E:/9_Learning/14_CS50/Git_repository/120554330/Web_Dev/Week_0/Problem_0/search_image.html" target="_top" wrc_done="true">Images</a>
+
+                    </div>
+                
+                </div>
+
+                <div class="container">
+
+                    <div class="link_advanced"> <!-- gb_F gb_H -->
+                        
+                        <a class="advanced" aria-label="Advanced Search (opens a new tab)" data-pid="23" href="file:///E:/9_Learning/14_CS50/Git_repository/120554330/Web_Dev/Week_0/Problem_0/search_advanced.html" target="_top" wrc_done="true">Advanced</a>
+
+                    </div> 
+                
+                </div>
+
+            </div>
+        
+        </div>
+
+        
+        <form action="https://www.google.com/search">
+            
+            <div id="search_area">
+
+                <img src="./googlelogo_light.png" style="padding-bottom: 20px;">
+
+                <div class="searchbar">
+                    
+                    <input id="sb" type="text" name="q">
+
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <div class="buttons" style="padding: 10px">
+
+                    <input class="in_but" type="submit" value="Google Search">
+
+                </div>
+                
+                <div class="buttons" style="padding: 10px">
+
+                    <input class="in_but" type="submit" value="I'm Feeling Lucky!">
+
+                </div>
+                
+            </div>
+ 
+        </form>
+
+        
+    </body>
+</html>
