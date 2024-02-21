@@ -7,12 +7,19 @@ For a more detailed explanation see MyREADME.md
 """
 
 from messages import welcome, game_rules
-from game_mechanics import random_note_generator, check_player_answer
+
+from game_functions import get_next_question
+from game_objects import RandomNumbers, Question
+from game_variables import notes
+
+
+# refactor-ross variables
+player_answer: str = None
 
 # Declare variables
 counter: int = 0
 game: bool = True
-game_notes: list[any] = [None, None]
+game_notes: list[any] = [None, None, None]
 correct = False
 
 ## Start game ##
@@ -22,7 +29,7 @@ rules: str = input(welcome)
 if rules.lower() == "rules":
     input(game_rules)
 
-print("Let's play!")
+print("\nLet's play!\n")
 
 # Game Looop
 while game == True:
@@ -30,30 +37,42 @@ while game == True:
     # Check if it is the first game
     if counter == 0:
         counter += 1
+
         # Generate game notes
-        game_notes = random_note_generator()
+        question = Question
+
+        # Call generate_random_number here rather than in main.py
+        random_numbers = get_next_question()
+
+        question.note_1 = notes[random_numbers[0]][0]
+        question.note_2 = notes[random_numbers[1]][0]
+        question.semitone_count = abs(notes[random_numbers[0]][1] - notes[random_numbers[1]][1])
 
         # Check player answer
-        while correct == False:
+        while question.check_answer(player_answer) == False:
 
             # Capture player answer
-            player_answer: str = input(f"The two notes are:\n{game_notes[0]} and\n{game_notes[1]}\n\nHow many semitones seperate them:\n")
+            player_answer: str = input(f"The two notes are:\n{question.note_1} and\n{question.note_2}\n\nHow many semitones seperate them:\n")
 
-            # Check if the player is done playing
-            if player_answer.lower() == "done":
-                print("Thank you for playing Music Box!\nWe hope to see you soon.\n\n")
-                correct = True
-                game = False
+            # check if the player wants to quit | give up:
+            if player_answer == 'done':
+                print(f"\nThe answer you where looking for is: {question.semitone_count}\n")
+                break
             else:
-                # check the players answer and dislay the corresponding message and True - for correct - or False - for incorrect - answers
-                correct = check_player_answer(int(player_answer), game_notes[2])
+                # Incorrect answer
+                print("\nSorry!\nYour answer is NOT correct.\n")
+
+        # Correct answer
+        print("\nGOOD JOB!\nYour answer is correct.\n")
 
     else:
         # Ask if the player would like to play agin
         play_more: str = input("Would you like to play again? (y/n):\n")
+        # Exit game
         if play_more.lower() == 'n' or play_more.lower() == 'no':
             print("Thank you for playing Music Box!\nWe hope to see you soon.\n\n")
             game = False
+        # Reset loop and play again
         else:
             counter = 0
             correct = False
